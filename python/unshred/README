@@ -1,20 +1,32 @@
 @gabehollombe convinced me to write this. let's see how long it takes.
 
-He did his in coffeescript+canvas:
-* code: https://github.com/gabehollombe/unshred/
-* demo: http://gabehollombe.github.com/unshred/
-
 Here's the challenge details:
 * http://instagram-engineering.tumblr.com/post/12651721845/instagram-engineering-challenge-the-unshredder
 
-my basic idea: use levenshtein distances on columns
-result: it worked!
+He did his in coffeescript+canvas (because he hates himself :) 
+* code: https://github.com/gabehollombe/unshred/
+* demo: http://gabehollombe.github.com/unshred/
+
+It's very cool, but I wanted to try a different algorithm which I was sure would work. My basic idea: use levenshtein distances on columns!
+
+RESULT
+===
+It worked!
 
 the bonus is easy: to detect width, just run the levenshtein distances to find deltas and count the delta spikes, will do that if i have time/motivation, but my itch is pretty scratched here...
+
+there are a few extra loops that could be tightened, and i'm sure there's a better representation (shifting colorspace?) for doing pixel difference comparisons, but for an abstract exercise...
 
 DEPENDENCIES
 ===
 * easy_install python-Levenshtein
+
+REFERENCE
+===
+For those interested in some fun algorithms:
+http://en.wikipedia.org/wiki/Levenshtein_distance
+http://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance
+http://en.wikipedia.org/wiki/Hamming_distance
 
 STATS
 ===
