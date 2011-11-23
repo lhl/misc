@@ -8,7 +8,7 @@ import sys
 def main():
   u = Unshred('TokyoPanoramaShredded.png')
   u.makeStrips(32)
-  u.unshred('unshredded.png')
+  u.unshred('unshredded.jpg')
 
 class Unshred:
   def __init__(self, filename):
@@ -32,7 +32,7 @@ class Unshred:
        source_region = self.image.crop((x1, y1, x2, y2))
        destination_point = (strip * self.stripwidth, 0)
        unshredded.paste(source_region, destination_point)
-    unshredded.save('unshredded.jpg', 'JPEG')
+    unshredded.save(output, 'JPEG')
 
   def makeStrips(self, width):
     self.stripwidth = width
@@ -80,7 +80,7 @@ class Unshred:
           del(totheright[key])
     print 'Here\'s our order:', self.ordered
 
-    self._save('output')
+    self._save(output)
 
 if __name__ == "__main__":
   main()
