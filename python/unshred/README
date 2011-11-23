@@ -13,6 +13,8 @@ RESULT
 ===
 It worked!
 
+and the most naive one at that. it could be improved greatly by quantizing (A-Z would be plenty instead of a straight hex conversion)... hmm, ok, trying a quantized version...
+
 the bonus is easy: to detect width, just run the distances to find deltas and count the delta spikes, will do that if i have time/motivation, but my itch is pretty scratched here...
 
 Now yes, in a real world implementation, the distances should probably be calculating euclidean distances for the pixel (maybe shifting to a different color space w/ different weighting) and then summing/avging the diffed columns, but what fun is that?
@@ -46,4 +48,12 @@ Language                     files          blank        comment           code
 Python                           1             12              1             73
 -------------------------------------------------------------------------------
 
+01-basic.py 
+real  0m5.018s
+user  0m4.735s
+sys 0m0.099s
 
+02-quantize.py
+real  0m1.453s
+user  0m1.327s
+sys 0m0.084s
