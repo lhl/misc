@@ -13,9 +13,9 @@ RESULT
 ===
 It worked!
 
-the bonus is easy: to detect width, just run the levenshtein distances to find deltas and count the delta spikes, will do that if i have time/motivation, but my itch is pretty scratched here...
+the bonus is easy: to detect width, just run the distances to find deltas and count the delta spikes, will do that if i have time/motivation, but my itch is pretty scratched here...
 
-there are a few extra loops that could be tightened, and i'm sure there's a better representation (shifting colorspace?) for doing pixel difference comparisons, but for an abstract exercise...
+Now yes, in a real world implementation, the distances should probably be calculating euclidean distances for the pixel (maybe shifting to a different color space w/ different weighting) and then summing/avging the diffed columns, but what fun is that?
 
 DEPENDENCIES
 ===
@@ -27,6 +27,10 @@ For those interested in some fun algorithms:
 http://en.wikipedia.org/wiki/Levenshtein_distance
 http://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance
 http://en.wikipedia.org/wiki/Hamming_distance
+
+For boring "real" stuff:
+http://en.wikipedia.org/wiki/Color_difference
+http://en.wikipedia.org/wiki/Euclidean_distance
 
 STATS
 ===
