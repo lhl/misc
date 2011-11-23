@@ -7,7 +7,7 @@ He did his in coffeescript+canvas (because he hates himself :)
 * code: https://github.com/gabehollombe/unshred/
 * demo: http://gabehollombe.github.com/unshred/
 
-It's very cool, but I wanted to try a different algorithm which I was sure would work. My basic idea: use levenshtein distances on columns!
+It's very cool, but I wanted to try a different algorithm which I was sure would work (well, wasn't sure, but had a strong hunch on). My basic idea: use levenshtein distances on columns!
 
 RESULT
 ===
