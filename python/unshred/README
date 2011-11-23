@@ -1,0 +1,10 @@
+@gabehollombe convinced me to write this. let's see how long it takes.
+http://instagram-engineering.tumblr.com/post/12651721845/instagram-engineering-challenge-the-unshredder
+
+started:          2011-11-23 1:40am
+01-basic.py done: 2011-11-23 3:40am
+
+basic idea: use levenshtein distances on columns
+
+dependencies:
+* easy_install python-Levenshtein
