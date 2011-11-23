@@ -1,10 +1,33 @@
 @gabehollombe convinced me to write this. let's see how long it takes.
-http://instagram-engineering.tumblr.com/post/12651721845/instagram-engineering-challenge-the-unshredder
 
-started:          2011-11-23 1:40am
-01-basic.py done: 2011-11-23 3:40am
+He did his in coffeescript+canvas:
+* code: https://github.com/gabehollombe/unshred/
+* demo: http://gabehollombe.github.com/unshred/
 
-basic idea: use levenshtein distances on columns
+Here's the challenge details:
+* http://instagram-engineering.tumblr.com/post/12651721845/instagram-engineering-challenge-the-unshredder
 
-dependencies:
+my basic idea: use levenshtein distances on columns
+result: it worked!
+
+the bonus is easy: to detect width, just run the levenshtein distances to find deltas and count the delta spikes, will do that if i have time/motivation, but my itch is pretty scratched here...
+
+DEPENDENCIES
+===
 * easy_install python-Levenshtein
+
+STATS
+===
+
+01-basic.py
+started:  2011-11-23 1:40am
+finished: 2011-11-23 3:41am
+
+http://cloc.sourceforge.net v 1.55  T=0.5 s (2.0 files/s, 172.0 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Python                           1             12              1             73
+-------------------------------------------------------------------------------
+
+
